@@ -15,6 +15,7 @@
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <title>Hands-on Project 1-3</title>
    <link rel="stylesheet" href="styles.css" />
+   
 </head>
 
 <body>
@@ -156,9 +157,16 @@
           </fieldset>
         </fieldset>
         <fieldset id="submitbutton">
-          <input type="button" value="Submit" />
+          <input type="button" value="Submit"
+          onclick="response()"/>
         </fieldset>
+        <script>
+          function response(){
+            document.getElementById('submitMsg').innerHTML = 'Thank you for your order'; 
+          }
         
+        
+        </script>
         <div id="submitMsg"></div>
      </form>
    </article>

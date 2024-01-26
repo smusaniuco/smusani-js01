@@ -9,4 +9,12 @@
 */
 
 //define variables for home and work addresses
+var hmeStreet = "1 Main St.", 
+hmeCity = "Sicilia", 
+hmeState = "MA", 
+hmeCode = "02103";
+var wrkStreet = "15 Oak Ln.", 
+wrkCity = "Central City", 
+wrkState = "MA", 
+wrkCode = "02104";
 

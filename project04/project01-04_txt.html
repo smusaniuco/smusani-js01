@@ -15,8 +15,8 @@
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <title>Hands-on Project 1-4</title>
    <link rel="stylesheet" href="styles.css" />
+   <script src="project01-04_txt.js"></script>
 </head>
-
 <body>
    <header>
       <h1>
@@ -27,16 +27,31 @@
    <article>
       <h2>Shipping Address</h2>
       <form>
-      
          <fieldset id="addroptions">
             <legend><span>Choose an address</span></legend>
             <label for="homeoption" id="homeaddr">
                <div>Home</div>
-               <input type="radio" id="homeoption" name="shippingaddr" />
+               <script>
+                  document.write(hmeStreet  + "<br>");
+                  document.write(hmeCity + ", " + hmeState + " " + hmeCode);
+               </script>
+               <input type="radio" id="homeoption" name="shippingaddr" 
+                      onclick = "document.getElementById('street').value = hmeStreet ;
+                                 document.getElementById('city').value = hmeCity;
+                                 document.getElementById('state').value = hmeState;
+                                 document.getElementById('code').value = hmeCode;" />
             </label>
             <label for="workoption" id="workaddr">
                <div>Work</div>
-               <input type="radio" id="workoption" name="shippingaddr" />
+               <script>
+                  document.write(wrkStreet + "<br>");
+                  document.write(workCity + ", " + wrkState + " " + wrkCode);
+               </script>
+               <input type="radio" id="workoption" name="shippingaddr" 
+                      onclick = "document.getElementById('street').value = wrkStreet;
+                                 document.getElementById('city').value = wrkCity;
+                                 document.getElementById('state').value = wrkState;
+                                 document.getElementById('code').value = wrkCode;" />
             </label>
          </fieldset>
          
