@@ -2,8 +2,8 @@
     Chapter 1
     Hands-On Project 1-2
 
-    Author: 
-    Date:   
+    Author: shyam prasad Reddy Musani
+    Date:   1/26/2024
 
     Filename: project01-02.js
 */
